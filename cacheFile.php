@@ -157,6 +157,16 @@ class CacheFile
     }
     
     /**
+     * Get the Currently set hash
+     *
+     * @return string The MD5 hash currently set
+     */
+    public function getHash() : string
+    {
+        return $this->hash ?? null;
+    }
+
+    /**
      * Returns the full cache file path
      * @return string or false if the file does not exist
      */
